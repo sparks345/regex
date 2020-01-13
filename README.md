@@ -14,10 +14,10 @@ Map<String, String> queryParams = new HashMap<>();
 
 Matcher matcher = sPattern.matcher(url);
 while (matcher.find()) {
-String key = URLDecoder.decode(matcher.group(1));
-Log.v(TAG, "key:" + key);
-String val = URLDecoder.decode(matcher.group(2));
-Log.v(TAG, "val:" + val);
-queryParams.put(key, val);
+    String key = URLDecoder.decode(matcher.group(1));
+    Log.v(TAG, "key:" + key);
+    String val = URLDecoder.decode(matcher.group(2));
+    Log.v(TAG, "val:" + val);
+    queryParams.put(key, val);
 }
 ```
